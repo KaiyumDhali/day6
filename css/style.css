@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cl1{width: 8.33%}
+.cl2{width: 16.66%}
+.cl3{width: 25%}
+.cl4{width: 33.33%}
+.cl5{width: 41.66%}
+.cl6{width: 50%}
+.cl7{width: 58.33%}
+.cl8{width: 66.66%}
+.cl9{width: 75%}
+.cl10{width: 83.33%}
+.cl11{width: 91.66%}
+.cl12{width: 100%}
+[class*='cl']{
+  float: left;
+    border: 1px solid grey;
+}
+
+.h40{height: 40px;}
+.h50{height: 50px;}
+.h300{height: 300px;}
+.h600{height: 600px;}
+.h200{height: 200px;}
+.h100{height: 100px;}
+.h400{height: 400px;}
+.h150{height: 150px;}
+.h75{height: 75px;}
+.h133{height: 133px;}
+.h66{height: 66px;}
+.h250{height: 250px;}
+.h1200{height: 1200px;}
+.h575{height: 575px;}
+.h266{height: 266px;}
+.h500{height: 500px;}
+.h700{height: 700px;}
+
+.row:after{
+    content: '';
+    clear: both;
+    display: block;
+
+}
+.container{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+}
+.image1 img{
+    height: 150px;
+    width: 50%;
+   padding-bottom: 40px;
+    padding-left:75px;
+}
+.log a{
+    border: 1px solid gray;
+background-color: green;
+}
+
+@media screen and (max-width: 575px){
+    [class*='cl']{
+        width: 100%;
+    }
+    @media screen and (min-width: 576px) and (max-width: 991px){
+        .cl1m1{width: 8.33%}
+        .cl2m2{width: 16.66%}
+        .cl3m3{width: 25%}
+        .cl4m4{width: 33.33%}
+        .cl5m5{width: 41.66%}
+        .cl6m6{width: 50%}
+        .cl7m7{width: 58.33%}
+        .cl8m8{width: 66.66%}
+        .cl9m9{width: 75%}
+        .cl10m10{width: 83.33%}
+        .cl11m11{width: 91.66%}
+        .cl12m12{width: 100%}
+        .md-none{display: none;}
+        .search-position{
+            position: absolute;
+            right: 0px;
+        }
+    }
